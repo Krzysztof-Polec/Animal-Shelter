@@ -1,0 +1,721 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  font-family: 'Roboto', sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.blue-top {
+  width: 100%;
+  background-color: #e4edf0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.blue-top .header {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-top: 20px;
+  padding: 40px;
+  font-weight: bold;
+}
+
+.blue-top .header .logo {
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.blue-top .header .right-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70px;
+}
+
+.blue-top .header .right-panel p {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.blue-top .header .right-panel > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.blue-top .header .right-panel > div svg {
+  width: 25px;
+  height: 25px;
+}
+
+.blue-top .header .right-panel .missing {
+  background-color: #c69457;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.blue-top .header-info {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 40px;
+  padding-bottom: 150px;
+}
+
+.blue-top .header-info .header-info-left-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  padding-right: 120px;
+}
+
+.blue-top .header-info .header-info-left-panel h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.blue-top .header-info .header-info-left-panel p {
+  font-size: 18px;
+  width: 900px;
+  line-height: 1.6;
+}
+
+.blue-top .header-info .header-info-left-panel .header-info-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 25px;
+  margin-top: 55px;
+}
+
+.blue-top .header-info .header-info-left-panel .header-info-buttons > div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 30px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.blue-top .header-info .header-info-left-panel .header-info-buttons > div:hover {
+  background-color: black;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blue-top .header-info .header-info-left-panel .header-info-buttons > div p {
+  width: auto;
+}
+
+.blue-top .header-info .header-info-right-panel {
+  width: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[7];
+      grid-template-columns: repeat(7, 1fr);
+  -ms-grid-rows: (1fr)[4];
+      grid-template-rows: repeat(4, 1fr);
+  gap: 0;
+}
+
+.blue-top .header-info .header-info-right-panel .bottom-image {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 1 / 1 / 5 / 5;
+}
+
+.blue-top .header-info .header-info-right-panel .bottom-image img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.blue-top .header-info .header-info-right-panel .top-image {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 8;
+  grid-area: 3 / 2 / 5 / 10;
+  border-radius: 25px;
+  outline: 15px solid #e4edf0;
+}
+
+.blue-top .header-info .header-info-right-panel .top-image img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.salmon-mid {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #f9f3ec;
+}
+
+.salmon-mid::before {
+  content: "";
+  background-color: #e4edf0;
+  width: 100%;
+  height: 385px;
+  margin-bottom: 19%;
+}
+
+.salmon-mid .about {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 25px;
+  position: absolute;
+}
+
+.salmon-mid .about .about-left-panel {
+  width: 60%;
+  padding: 50px;
+}
+
+.salmon-mid .about .about-left-panel h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.salmon-mid .about .about-left-panel p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.salmon-mid .about .about-left-panel p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.salmon-mid .about .about-left-panel .about-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #c69457;
+  border: 2px solid #c69457;
+  width: 200px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.salmon-mid .about .about-left-panel .about-button p {
+  margin-bottom: 0;
+}
+
+.salmon-mid .about .about-left-panel .about-button:hover {
+  background-color: transparent;
+  color: #c69457;
+}
+
+.salmon-mid .about .about-right-panel {
+  width: 50%;
+}
+
+.salmon-mid .about .about-right-panel img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.salmon-mid .adopt {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-bottom: 85px;
+}
+
+.salmon-mid .adopt .adopt-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 25px;
+  color: #444444;
+  margin-bottom: 40px;
+}
+
+.salmon-mid .adopt .adopt-content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.salmon-mid .adopt .adopt-content .adoption-proposal {
+  width: 22%;
+  min-width: 350px;
+}
+
+.salmon-mid .adopt .adopt-content .adoption-proposal .adoption-proposal-header {
+  width: 100%;
+}
+
+.salmon-mid .adopt .adopt-content .adoption-proposal .adoption-proposal-header img {
+  width: 100%;
+  display: block;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.salmon-mid .adopt .adopt-content .adoption-proposal .adoption-proposal-footer {
+  background-color: #ffffff;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  padding: 25px;
+}
+
+.salmon-mid .adopt .adopt-content .adoption-proposal .adoption-proposal-footer h1 {
+  color: #444444;
+  margin-bottom: 15px;
+}
+
+.salmon-mid .adopt .adopt-content .adoption-proposal .adoption-proposal-footer p {
+  color: #b8a794;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.salmon-mid .adopt .adopt-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.salmon-mid .adopt .adopt-footer .adopt-footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+  margin-top: 50px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #c69457;
+  border: 2px solid #c69457;
+  width: 200px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.salmon-mid .adopt .adopt-footer .adopt-footer-button p {
+  margin-bottom: 0;
+}
+
+.salmon-mid .adopt .adopt-footer .adopt-footer-button:hover {
+  background-color: transparent;
+  color: #c69457;
+}
+
+.blue-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #e4edf0;
+}
+
+.blue-bottom::before {
+  content: "";
+  background-color: #f9f3ec;
+  width: 100%;
+  height: 385px;
+  margin-bottom: 19%;
+}
+
+.blue-bottom .food-donation {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 25px;
+  position: absolute;
+}
+
+.blue-bottom .food-donation .food-donation-left-panel {
+  width: 50%;
+}
+
+.blue-bottom .food-donation .food-donation-left-panel img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel {
+  width: 60%;
+  padding: 50px;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel .food-donation-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #c69457;
+  border: 2px solid #c69457;
+  width: 200px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel .food-donation-button p {
+  margin-bottom: 0;
+}
+
+.blue-bottom .food-donation .food-donation-right-panel .food-donation-button:hover {
+  background-color: transparent;
+  color: #c69457;
+}
+
+.blue-bottom .voluntary-organisation {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin-bottom: 60px;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel {
+  width: 60%;
+  padding: 50px;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: start;
+      align-self: start;
+  padding: 20px;
+  margin-top: 100px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #c69457;
+  border: 2px solid #c69457;
+  width: 200px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button p {
+  margin-bottom: 0;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button:hover {
+  background-color: transparent;
+  color: #c69457;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-right-panel {
+  width: 50%;
+}
+
+.blue-bottom .voluntary-organisation .voluntary-organisation-right-panel img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.white-bottom {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+.white-bottom .footer {
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.white-bottom .footer .footer-left-panel {
+  width: 60%;
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.white-bottom .footer .footer-left-panel h1 {
+  font-size: 55px;
+  margin-bottom: 30px;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text] {
+  width: 50%;
+  border: 2px solid #e1e1e1;
+  border-radius: 7px;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 16px;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]:last-of-type {
+  padding-bottom: 90px;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]:active, .white-bottom .footer .footer-left-panel input[type=text]:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]:hover {
+  border: 2px solid #e1e1e1;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]::-webkit-input-placeholder {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]:-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]::-ms-input-placeholder {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+}
+
+.white-bottom .footer .footer-left-panel input[type=text]::placeholder {
+  color: black;
+  font-size: 16px;
+  position: absolute;
+}
+
+.white-bottom .footer .footer-left-panel .footer-check {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+
+.white-bottom .footer .footer-left-panel .footer-check:first-of-type {
+  margin: 30px 0;
+}
+
+.white-bottom .footer .footer-left-panel .footer-check input[type=radio] {
+  margin-top: 5px;
+}
+
+.white-bottom .footer .footer-left-panel .footer-check p {
+  width: 50%;
+  line-height: 1.6;
+}
+
+.white-bottom .footer .footer-left-panel .footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 20px;
+  margin-top: 100px;
+  margin-right: 45px;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: #c69457;
+  border: 2px solid #c69457;
+  width: 100px;
+  cursor: pointer;
+  color: #ffffff;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.white-bottom .footer .footer-left-panel .footer-button p {
+  margin-bottom: 0;
+}
+
+.white-bottom .footer .footer-left-panel .footer-button:hover {
+  background-color: transparent;
+  color: #c69457;
+}
+
+.white-bottom .footer .footer-right-panel {
+  width: 50%;
+}
+
+.white-bottom .footer .footer-right-panel img {
+  width: 100%;
+  height: 100%;
+}
+/*# sourceMappingURL=style.css.map */
