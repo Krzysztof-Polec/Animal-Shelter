@@ -11,4 +11,4 @@ My personal website - Animal Shelter
 
 ## Demo
 
-Project Link: [https://krzys5592.github.io/Phone-Project/](https://krzys5592.github.io/Phone-Project/)
+Project Link: [https://krzys5592.github.io/Animal-Shelter/](https://krzys5592.github.io/Animal-Shelter/)
