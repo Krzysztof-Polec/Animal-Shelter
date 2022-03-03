@@ -121,11 +121,12 @@
                     border-radius: 30px;
                     font-weight: bold;
                     cursor: pointer;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
 
                     &:hover{
                         background-color: black;
                         color: #ffffff;
-                        transition: 0.5s;
                     }
 
                     p{
@@ -224,7 +225,8 @@
                 width: 200px;
                 cursor: pointer;
                 color: #ffffff;
-                transition: 0.5s;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
 
                 p{
                     margin-bottom: 0;
@@ -323,7 +325,8 @@
                 width: 200px;
                 cursor: pointer;
                 color: #ffffff;
-                transition: 0.5s;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
 
                 p{
                     margin-bottom: 0;
@@ -402,7 +405,8 @@
                 width: 200px;
                 cursor: pointer;
                 color: #ffffff;
-                transition: 0.5s;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
 
                 p{
                     margin-bottom: 0;
@@ -454,7 +458,8 @@
                 width: 200px;
                 cursor: pointer;
                 color: #ffffff;
-                transition: 0.5s;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
 
                 p{
                     margin-bottom: 0;
@@ -565,7 +570,8 @@
                 width: 100px;
                 cursor: pointer;
                 color: #ffffff;
-                transition: 0.5s;
+                transition: 0.3s;
+                transition-timing-function: ease-in-out;
 
                 p{
                     margin-bottom: 0;

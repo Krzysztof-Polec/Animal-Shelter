@@ -149,13 +149,15 @@
   border-radius: 30px;
   font-weight: bold;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .blue-top .header-info .header-info-left-panel .header-info-buttons > div:hover {
   background-color: black;
   color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
 }
 
 .blue-top .header-info .header-info-left-panel .header-info-buttons > div p {
@@ -269,8 +271,10 @@
   width: 200px;
   cursor: pointer;
   color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .salmon-mid .about .about-left-panel .about-button p {
@@ -394,8 +398,10 @@
   width: 200px;
   cursor: pointer;
   color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .salmon-mid .adopt .adopt-footer .adopt-footer-button p {
@@ -486,8 +492,10 @@
   width: 200px;
   cursor: pointer;
   color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .blue-bottom .food-donation .food-donation-right-panel .food-donation-button p {
@@ -546,8 +554,10 @@
   width: 200px;
   cursor: pointer;
   color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button p {
@@ -697,8 +707,10 @@
   width: 100px;
   cursor: pointer;
   color: #ffffff;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+          transition-timing-function: ease-in-out;
 }
 
 .white-bottom .footer .footer-left-panel .footer-button p {
