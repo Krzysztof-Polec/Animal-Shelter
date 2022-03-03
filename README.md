@@ -6,7 +6,6 @@ My personal website - Animal Shelter
 
 * HTML
 * SCSS
-* JavaScript
 * RESPONSIVE WEB DESIGN
 
 ## Demo
