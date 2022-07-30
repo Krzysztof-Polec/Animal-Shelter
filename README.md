@@ -10,4 +10,4 @@ My personal website - Animal Shelter
 
 ## Demo
 
-Project Link: [https://krzys5592.github.io/Animal-Shelter/](https://krzys5592.github.io/Animal-Shelter/)
+Project Link: [https://krzysztof-polec.github.io/Animal-Shelter/](https://krzysztof-polec.github.io/Animal-Shelter/)
