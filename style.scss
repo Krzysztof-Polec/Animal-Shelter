@@ -52,6 +52,10 @@
         .logo{
             margin-left: 5px;
             cursor: pointer;
+
+            img{
+                width: 41px;
+            }
         }
 
         .right-panel{
@@ -81,6 +85,20 @@
                 color: #ffffff;
                 padding: 10px;
                 border-radius: 5px;
+            }
+
+            .hamburger{
+                width: 40px;
+                height: 40px;
+                display: none;
+                flex-direction: column;
+                justify-content: center;
+
+                & > div{
+                    width: 100%;
+                    height: 3px;
+                    background-color: #121212;
+                }
             }
         }  
     }
@@ -149,6 +167,7 @@
                 img{
                     width: 100%;
                     border-radius: 25px;
+                    object-fit: cover;
                 }
             }
 
@@ -160,6 +179,7 @@
                 img{
                     width: 100%;
                     border-radius: 25px;
+                    object-fit: cover;
                 }
             }
         }
@@ -177,26 +197,18 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #f9f3ec;
-
-    &::before{
-        content: "";
-        background-color: #e4edf0;
-        width: 100%;
-        height: 385px;
-        margin-bottom: 19%;
-    }
+    background: linear-gradient(to bottom,#e4edf0 20.5%, #f9f3ec 20.5% 79.5%);
 
     .about{
         width: 90%;
         display: flex;
         background-color: #ffffff;
         border-radius: 25px;
-        position: absolute;
+        margin-bottom: 7%;
 
         .about-left-panel{
             width: 60%;
-            padding: 50px;
+            padding: 25px;
             
             h1{
                 font-size: 55px;
@@ -212,29 +224,34 @@
                 }
             }
 
-            .about-button{
+            .about-button-wrapper{
+                width: 100%;
                 display: flex;
-                justify-content: center;
-                align-self: start;
-                padding: 20px;
-                margin-top: 100px;
-                border-radius: 30px;
-                font-weight: bold;
-                background-color: #c69457;
-                border: 2px solid #c69457;
-                width: 200px;
-                cursor: pointer;
-                color: #ffffff;
-                transition: 0.3s;
-                transition-timing-function: ease-in-out;
 
-                p{
-                    margin-bottom: 0;
-                }
-
-                &:hover{
-                    background-color: transparent;
-                    color: #c69457;
+                .about-button{
+                    display: flex;
+                    justify-content: center;
+                    align-self: start;
+                    padding: 20px;
+                    margin-top: 100px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    background-color: #c69457;
+                    border: 2px solid #c69457;
+                    width: 200px;
+                    cursor: pointer;
+                    color: #ffffff;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+    
+                    &:hover{
+                        background-color: transparent;
+                        color: #c69457;
+                    }
                 }
             }
         }
@@ -247,6 +264,8 @@
                 height: 100%;
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
+                object-fit: cover;
+                display: block;
             }
         }
     }
@@ -257,7 +276,7 @@
         justify-content: center;
         flex-direction: column;
         align-self: center;
-        margin-bottom: 85px;
+        margin-bottom: 10%;
 
         .adopt-header{
             display: flex;
@@ -285,6 +304,7 @@
                         display: block;
                         border-top-left-radius: 25px;
                         border-top-right-radius: 25px;
+                        object-fit: cover;
                     }
                 }
 
@@ -346,22 +366,14 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #e4edf0;
-
-    &::before{
-        content: "";
-        background-color: #f9f3ec;
-        width: 100%;
-        height: 385px;
-        margin-bottom: 19%;
-    }
+    background: linear-gradient(to bottom,#f9f3ec 20.5%, #e4edf0 20.5% 79.5%);
 
     .food-donation{
         width: 90%;
         display: flex;
         background-color: #ffffff;
         border-radius: 25px;
-        position: absolute;
+        margin-bottom: 9%;
 
         .food-donation-left-panel{
             width: 50%;
@@ -371,12 +383,13 @@
                 height: 100%;
                 border-top-left-radius: 25px;
                 border-bottom-left-radius: 25px;
+                object-fit: cover;
             }
         }
 
         .food-donation-right-panel{
             width: 60%;
-            padding: 50px;
+            padding: 25px;
             
             h1{
                 font-size: 55px;
@@ -391,30 +404,34 @@
                     margin-bottom: 30px;
                 }
             }
-
-            .food-donation-button{
+            .food-donation-button-wrapper{
+                width: 100%;
                 display: flex;
-                justify-content: center;
-                align-self: start;
-                padding: 20px;
-                margin-top: 100px;
-                border-radius: 30px;
-                font-weight: bold;
-                background-color: #c69457;
-                border: 2px solid #c69457;
-                width: 200px;
-                cursor: pointer;
-                color: #ffffff;
-                transition: 0.3s;
-                transition-timing-function: ease-in-out;
 
-                p{
-                    margin-bottom: 0;
-                }
-
-                &:hover{
-                    background-color: transparent;
-                    color: #c69457;
+                .food-donation-button{
+                    display: flex;
+                    justify-content: center;
+                    align-self: start;
+                    padding: 20px;
+                    margin-top: 100px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    background-color: #c69457;
+                    border: 2px solid #c69457;
+                    width: 200px;
+                    cursor: pointer;
+                    color: #ffffff;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+    
+                    &:hover{
+                        background-color: transparent;
+                        color: #c69457;
+                    }
                 }
             }
         }
@@ -425,11 +442,11 @@
         display: flex;
         background-color: #ffffff;
         border-radius: 25px;
-        margin-bottom: 60px;
+        margin-bottom: 7%;
 
         .voluntary-organisation-left-panel{
             width: 60%;
-            padding: 50px;
+            padding: 25px;
             
             h1{
                 font-size: 55px;
@@ -445,29 +462,34 @@
                 }
             }
 
-            .voluntary-organisation-button{
+            .voluntary-organisation-button-wrapper{
+                width: 100%;
                 display: flex;
-                justify-content: center;
-                align-self: start;
-                padding: 20px;
-                margin-top: 100px;
-                border-radius: 30px;
-                font-weight: bold;
-                background-color: #c69457;
-                border: 2px solid #c69457;
-                width: 200px;
-                cursor: pointer;
-                color: #ffffff;
-                transition: 0.3s;
-                transition-timing-function: ease-in-out;
-
-                p{
-                    margin-bottom: 0;
-                }
-
-                &:hover{
-                    background-color: transparent;
-                    color: #c69457;
+                
+                .voluntary-organisation-button{
+                    display: flex;
+                    justify-content: center;
+                    align-self: start;
+                    padding: 20px;
+                    margin-top: 100px;
+                    border-radius: 30px;
+                    font-weight: bold;
+                    background-color: #c69457;
+                    border: 2px solid #c69457;
+                    width: 200px;
+                    cursor: pointer;
+                    color: #ffffff;
+                    transition: 0.3s;
+                    transition-timing-function: ease-in-out;
+    
+                    p{
+                        margin-bottom: 0;
+                    }
+    
+                    &:hover{
+                        background-color: transparent;
+                        color: #c69457;
+                    }
                 }
             }
         }
@@ -480,6 +502,7 @@
                 height: 100%;
                 border-top-right-radius: 25px;
                 border-bottom-right-radius: 25px;
+                object-fit: cover;
             }
         }
     }
@@ -499,7 +522,7 @@
 
         .footer-left-panel{
             width: 60%;
-            padding: 50px;
+            padding: 30px 25px 50px;
             display: flex;
             flex-direction: column;
             
@@ -516,9 +539,31 @@
                 margin: 10px 0;
                 font-size: 16px;
 
-                &:last-of-type{
-                    padding-bottom: 90px;
+                &:active,
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
                 }
+
+                &:hover{
+                    border: 2px solid #e1e1e1;
+                }
+
+                &::placeholder{
+                    color: black;
+                    font-size: 16px;
+                    position: absolute;
+                }
+            }
+
+            textarea{
+                width: 50%;
+                border: 2px solid #e1e1e1;
+                border-radius: 7px;
+                padding: 10px 10px 90px;
+                margin: 10px 0;
+                font-size: 16px;
+                resize: none;
 
                 &:active,
                 &:focus{
@@ -590,8 +635,311 @@
             img{
                 width: 100%;
                 height: 100%;
+                object-fit: cover;
             }
         }
     }
 }
 
+
+
+// MEDIA //
+
+
+
+@media (max-width: 2100px){
+    .blue-top{
+        .header-info{
+            .header-info-left-panel{
+                p{
+                    width: auto;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1660px){
+    .salmon-mid{
+        .adopt{
+            .adopt-content{
+                gap: 100px;
+
+                .adoption-proposal{
+                    width: 44%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .blue-top{
+        .header{
+            .right-panel{
+                p{
+                    display: none;
+                }
+
+                div{
+                    display: none;
+                }
+
+                .hamburger{
+                    display: flex;
+
+                    & > div{
+                        display: block;
+                    }
+                }
+            }
+        }
+
+        .header-info{
+            flex-direction: column;
+            gap: 100px;
+            text-align: left;
+
+            .header-info-left-panel{
+                width: 100%;
+                padding-right: 0;
+
+                .header-info-buttons{
+                    justify-content: center;
+                }
+            }
+
+            .header-info-right-panel{
+                width: 100%;
+            }
+        }
+    }
+    
+    .salmon-mid{
+        .about{
+            flex-direction: column-reverse;
+            
+            .about-left-panel{
+                width: 100%;
+            }
+
+            .about-right-panel{
+                width: 100%;
+                
+                img{
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+    .blue-bottom{
+        .food-donation{
+            flex-direction: column;
+
+            .food-donation-left-panel{
+                width: 100%;
+
+                img{
+                    border-radius: 25px;
+                }
+            }
+
+            .food-donation-right-panel{
+                width: 100%;
+            }
+        }
+
+        .voluntary-organisation{
+            flex-direction: column-reverse;
+
+            .voluntary-organisation-left-panel{
+                width: 100%;
+            }
+
+            .voluntary-organisation-right-panel{
+                width: 100%;
+
+                img{
+                    border-radius: 25px;
+                }
+            }
+        }
+    }
+
+    .white-bottom{
+        .footer{
+            flex-direction: column;
+
+            .footer-left-panel{
+                width: 100%;
+                align-items: center;
+
+                .footer-check{
+                    justify-content: center;
+                }
+
+                .footer-button{
+                    margin-right: 0;
+                }
+            }
+
+            .footer-right-panel{
+                width: 100%;
+
+                img{
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 930px){
+    .salmon-mid{
+        .adopt{
+            .adopt-content{
+                justify-content: center;
+
+                .adoption-proposal{
+                    width: 60%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 550px){
+    .blue-top{
+        .header-info{
+            .header-info-left-panel{
+                h1{
+                    font-size: 45px;
+                }
+
+                p{
+                    line-height: 2;    
+                }
+
+                .header-info-buttons{
+                    text-align: center;
+
+                    p{
+                        font-size: 15px;
+                    }
+                }
+            }
+
+            .header-info-right-panel{
+                .top-image{
+                    outline: 7px solid #e4edf0;
+                }
+            }
+        }
+    }
+
+    .salmon-mid{
+        .about{
+            margin-bottom: 20%;
+
+            .about-left-panel{
+                h1{
+                    font-size: 45px;
+                }
+
+                p{
+                    line-height: 2;
+                }
+
+                .about-button-wrapper{
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .adopt{
+            margin-bottom: 25%;
+
+            .adopt-header{
+                h1{
+                    font-size: 45px;
+                }
+            }
+
+            .adopt-content{
+                .adoption-proposal{
+                    width: 100%;
+                    min-width: 320px;
+                }
+            }
+        }
+    }
+
+    .blue-bottom{
+        .food-donation{
+            margin-bottom: 25%;
+
+            .food-donation-right-panel{
+                h1{
+                    font-size: 45px;
+                }
+
+                p{
+                    line-height: 2;
+                }
+
+                .food-donation-button-wrapper{
+                    justify-content: flex-end;
+                }
+            }
+        }
+
+        .voluntary-organisation{
+            margin-bottom: 20%;
+            
+            .voluntary-organisation-left-panel{
+                h1{
+                    font-size: 45px;
+                }
+
+                p{
+                    line-height: 2;
+                }
+
+                .voluntary-organisation-button-wrapper{
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+    .white-bottom{
+        .footer{
+            .footer-left-panel{
+                align-items: flex-start;
+
+                h1{
+                    font-size: 45px;
+                }
+
+                input[type=text]{
+                    width: 100%;
+                }
+
+                textarea{
+                    width: 100%;
+                }
+
+                .footer-check{
+                    justify-content: flex-start;
+
+                    p{
+                        width: 100%;
+                        line-height: 2;
+                    }
+                }
+            }
+        }
+    }
+}
