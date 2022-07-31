@@ -8,6 +8,21 @@
   padding: 0;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 100px;
+  border: 5px solid transparent;
+  background-clip: content-box;
+  background-color: #e4e4e4;
+}
+
 .wrapper {
   width: 100%;
   display: flex;
@@ -15,6 +30,37 @@
   flex-direction: column;
 }
 
+.reveal {
+  position: relative;
+  opacity: 0;
+}
+
+.reveal.active {
+  opacity: 1;
+}
+
+.active.fade-in {
+  -webkit-animation: fade-in 1s ease-in;
+          animation: fade-in 1s ease-in;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .blue-top {
   width: 100%;
   background-color: #e4edf0;
@@ -178,11 +224,7 @@
 .salmon-mid .about .about-left-panel p:first-of-type {
   margin-bottom: 30px;
 }
-.salmon-mid .about .about-left-panel .about-button-wrapper {
-  width: 100%;
-  display: flex;
-}
-.salmon-mid .about .about-left-panel .about-button-wrapper .about-button {
+.salmon-mid .about .about-left-panel .about-button {
   display: flex;
   justify-content: center;
   align-self: start;
@@ -198,10 +240,10 @@
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
-.salmon-mid .about .about-left-panel .about-button-wrapper .about-button p {
+.salmon-mid .about .about-left-panel .about-button p {
   margin-bottom: 0;
 }
-.salmon-mid .about .about-left-panel .about-button-wrapper .about-button:hover {
+.salmon-mid .about .about-left-panel .about-button:hover {
   background-color: transparent;
   color: #c69457;
 }
@@ -336,11 +378,7 @@
 .blue-bottom .food-donation .food-donation-right-panel p:first-of-type {
   margin-bottom: 30px;
 }
-.blue-bottom .food-donation .food-donation-right-panel .food-donation-button-wrapper {
-  width: 100%;
-  display: flex;
-}
-.blue-bottom .food-donation .food-donation-right-panel .food-donation-button-wrapper .food-donation-button {
+.blue-bottom .food-donation .food-donation-right-panel .food-donation-button {
   display: flex;
   justify-content: center;
   align-self: start;
@@ -356,10 +394,10 @@
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
-.blue-bottom .food-donation .food-donation-right-panel .food-donation-button-wrapper .food-donation-button p {
+.blue-bottom .food-donation .food-donation-right-panel .food-donation-button p {
   margin-bottom: 0;
 }
-.blue-bottom .food-donation .food-donation-right-panel .food-donation-button-wrapper .food-donation-button:hover {
+.blue-bottom .food-donation .food-donation-right-panel .food-donation-button:hover {
   background-color: transparent;
   color: #c69457;
 }
@@ -385,11 +423,7 @@
 .blue-bottom .voluntary-organisation .voluntary-organisation-left-panel p:first-of-type {
   margin-bottom: 30px;
 }
-.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button-wrapper {
-  width: 100%;
-  display: flex;
-}
-.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button-wrapper .voluntary-organisation-button {
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button {
   display: flex;
   justify-content: center;
   align-self: start;
@@ -405,10 +439,10 @@
   transition: 0.3s;
   transition-timing-function: ease-in-out;
 }
-.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button-wrapper .voluntary-organisation-button p {
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button p {
   margin-bottom: 0;
 }
-.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button-wrapper .voluntary-organisation-button:hover {
+.blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button:hover {
   background-color: transparent;
   color: #c69457;
 }
@@ -671,9 +705,7 @@
   }
   .blue-top .header-info .header-info-left-panel .header-info-buttons {
     text-align: center;
-  }
-  .blue-top .header-info .header-info-left-panel .header-info-buttons p {
-    font-size: 15px;
+    flex-direction: column;
   }
   .blue-top .header-info .header-info-right-panel .top-image {
     outline: 7px solid #e4edf0;
@@ -683,12 +715,13 @@
   }
   .salmon-mid .about .about-left-panel h1 {
     font-size: 45px;
+    margin-top: 10px;
   }
   .salmon-mid .about .about-left-panel p {
     line-height: 2;
   }
-  .salmon-mid .about .about-left-panel .about-button-wrapper {
-    justify-content: flex-end;
+  .salmon-mid .about .about-left-panel .about-button {
+    width: 100%;
   }
   .salmon-mid .adopt {
     margin-bottom: 25%;
@@ -705,24 +738,26 @@
   }
   .blue-bottom .food-donation .food-donation-right-panel h1 {
     font-size: 45px;
+    margin-top: 10px;
   }
   .blue-bottom .food-donation .food-donation-right-panel p {
     line-height: 2;
   }
-  .blue-bottom .food-donation .food-donation-right-panel .food-donation-button-wrapper {
-    justify-content: flex-end;
+  .blue-bottom .food-donation .food-donation-right-panel .food-donation-button {
+    width: 100%;
   }
   .blue-bottom .voluntary-organisation {
     margin-bottom: 20%;
   }
   .blue-bottom .voluntary-organisation .voluntary-organisation-left-panel h1 {
     font-size: 45px;
+    margin-top: 10px;
   }
   .blue-bottom .voluntary-organisation .voluntary-organisation-left-panel p {
     line-height: 2;
   }
-  .blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button-wrapper {
-    justify-content: flex-end;
+  .blue-bottom .voluntary-organisation .voluntary-organisation-left-panel .voluntary-organisation-button {
+    width: 100%;
   }
   .white-bottom .footer .footer-left-panel {
     align-items: flex-start;
